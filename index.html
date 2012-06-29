@@ -30,194 +30,123 @@
 			
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Node.js</h1>
+				<section data-state="blackout">
+					<h1><a class="image" href="http://nodejs.org" target="_blank"><img src="img/logonode.png"></a></h1>
 					<h3 class="inverted">JavaScript del lado del servidor</h3>
-					<p> <a href="http://nodejs.org/" target="_blank">descargar nodejs</a></p>
-					<p>framework JavaScript desarrollado con el intérprete del motor Javascript de Google Chrome (V8)</p>
+					<br/>
+					<p> <ul>
+							<li><a href="http://nodejs.org/dist/v0.8.0/node-v0.8.0-x86.msi" target="_blank">descargar nodejs windows x86</a></li>
+							<li><a href="http://nodejs.org/dist/v0.8.0/node-v0.8.0.pkg" target="_blank">descargar nodejs mac</a></li>
+							<li><a href="http://nodejs.org/dist/v0.8.0/node-v0.8.0.tar.gz" target="_blank">descargar nodejs fuentes</a></li>
+						</ul>
+					</p>
+					<br/>
+					<a href="http://agares.co/nodejscp">http://agares.co/nodejscp</a>
 					<script>
-						// Delicously hacky. Look away.
 						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
 					</script>
+
 				</section>
 				
-				<section>
-					<h2>Heads Up</h2>
+				<section data-state="blackout">
+					<h2>Non blocking IO <br/>(E/S no bloqueante)</h2>
 					<p>
-						reveal.js is an easy to use, HTML based, presentation tool. You'll need a modern browser with 
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
-				</section>
-				
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,<br/>
-							try pressing <a href="#/2/1">down</a>.
-						</p>
-						<a href="#/2/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Holistic Overview</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview!
+						 colocar aca que significa un http://en.wikipedia.org/wiki/Asynchronous_I/O ??
+						 con una imagencita
 					</p>
 				</section>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like:
-					</p>
+				<section data-state="blackout">
+					<h2>Nodejs</h2>
 					<ul>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=linear">Linear</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li>orientado a eventos</li>
+						<li>no blocking</li>
+						<li>javascript en el server</li>
+						<li>motor v8</li>
+						<li>3 años?</li>
 					</ul>
 				</section>
 				
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+				<section data-state="blackout">
+					<h2>Hola Campus!</h2>
+					<br/>
+					<br/>
+					<pre><code contenteditable style="font-size:1.8em;line-height:100%">
 
-				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This let's you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#/7/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#/7/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#/7/0" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+	console.log("Hola");
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	alert( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+	console.log("Campus Party Co 2012!");
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
+
+</code></pre>
 				</section>
 				
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code contenteditable>
-var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined || 
-				document.body.style['MozPerspective'] !== undefined ||
-				document.body.style['perspective'] !== undefined;
+				<section data-state="blackout">
+					<h2>Hola Campus! asincrono</h2>
+					<br/>
+					<br/>
+					<pre><code contenteditable style="font-size:1.8em;line-height:100%">
 
-function linkify( selector ) {
-    if( supports3DTransforms ) {
-        
-        var nodes = document.querySelectorAll( selector );
+	var util = require("util");??
 
-        for( var i = 0, len = nodes.length; i < len; i++ ) {
-            var node = nodes[i];
+	util.readFile("", function(file){console.log("Campus Party Co 2012!");});
 
-            if( !node.className || !node.className.match( /roll/g ) ) {
-                node.className += ' roll';
-                node.innerHTML = '<span data-title="'+ node.text +'">' + node.innerHTML + '</span>';
-            }
-        };
-    }
-}
+	console.log("Hola");
 
-linkify( 'a' );
+
+</code></pre>
+				</section>
+
+				<section data-state="blackout">
+					<h2>Qué significa javaScript en el servidor?</h2>
+
+					<p>implicaciones importantes, </p>
+					<ul>
+						<li>un solo lenguaje</li>
+						orientado a eventos...
+						modules por defecto de node y lo que se puede hacer
+						tcp
+						socket
+						http
+					</ul>
+				</section data-state="blackout">
+
+				<section data-state="blackout">
+					<h2>Chat simple en node por telnet</h2>
+					<pre><code contenteditable style="font-size:1.8em;line-height:100%">
+
+	var net = require("net");
+	net.createServer()....
+
+
 					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-				
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,<br/>
-						<a href="#/2/3">like this</a>.
-					</p>
+					
 				</section>
 
-				<section>
-					<h2>Fragmented Views</h2>
-					<p>Hit the next arrow...</p>
+				<section data-state="blackout">
+					<h2>Http server con node</h2>
+					<pre><code contenteditable style="font-size:1.8em;line-height:100%">
+
+	var http = require("http");
+	http.createServer()....
+
+
+					</code></pre>
+					
+				</section>
+				<section data-state="blackout">
+					<h2>NPM (Node Package Manager)</h2>
+					<p> ventajas, uso, ejemplos</p>
+				</section>
+
+				<section data-state="blackout">
+					<h2>require.json</h2>
+					<p>manejo facil de dependencias</p>
+				</section>
+
+				<section data-state="blackout">
+					<h2>Paquetes disponibles</h2>
+					<p>paquetes populares</p>
 					<p class="fragment">... to step through ...</p>
 					<ol>
 						<li class="fragment"><code>any type</code></li>
@@ -226,25 +155,9 @@ linkify( 'a' );
 					</ol>
 				</section>
 				
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
-						<img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
-					</a>
-				</section>
-				
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
-						<li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-				
-				<section>
-					<h1>THE END</h1>
-					<h3 class="inverted">BY Hakim El Hattab / hakim.se</h3>
+				<section data-state="blackout">
+					<h1>Gracias</h1>
+					<h3 class="inverted">Giovanny Beltran / agares.co / @_agares_</h3>
 				</section>
 			</div>
 
@@ -307,7 +220,7 @@ linkify( 'a' );
 				theme: query.theme || 'default', // default/neon
 
 				// Transition style
-				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+				transition: query.transition || 'linear' // default/cube/page/concave/linear(2d)
 			});
 
 			hljs.initHighlightingOnLoad();
