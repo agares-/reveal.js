@@ -17,8 +17,8 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
-
 		<link rel="stylesheet" href="lib/zenburn.css">
+		<link rel="stylesheet" title="GitHub" href="css/github.css">
 	</head>
 	
 	<body>
@@ -31,134 +31,277 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-state="blackout">
-					<h1><a class="image" href="http://nodejs.org" target="_blank"><img src="img/logonode.png"></a></h1>
-					<h3 class="inverted">JavaScript del lado del servidor</h3>
-					<br/>
-					<p> <ul>
-							<li><a href="http://nodejs.org/dist/v0.8.0/node-v0.8.0-x86.msi" target="_blank">descargar nodejs windows x86</a></li>
-							<li><a href="http://nodejs.org/dist/v0.8.0/node-v0.8.0.pkg" target="_blank">descargar nodejs mac</a></li>
-							<li><a href="http://nodejs.org/dist/v0.8.0/node-v0.8.0.tar.gz" target="_blank">descargar nodejs fuentes</a></li>
-						</ul>
-					</p>
-					<br/>
+					<h1><a class="image" href="http://nodejs.org" target="_blank"><img src="img/logonode.png" width="600"></a></h1>
+					<h3 class="inverted">JavaScript en el Servidor</h3>
 					<a href="http://agares.co/nodejscp">http://agares.co/nodejscp</a>
 					<script>
 						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
 					</script>
-
 				</section>
-				
+				<section data-state="blackout">
+					<h2>Instalando nodejs</h2>
+					<br/>
+					<p> 
+						<ul>
+							<li><a href="http://nodejs.org/dist/v0.8.0/node-v0.8.0-x86.msi" target="_blank">descargar nodejs windows x86</a></li>
+							<li><a href="http://nodejs.org/dist/v0.8.0/node-v0.8.0.pkg" target="_blank">descargar nodejs mac</a></li>
+							<li><a href="http://nodejs.org/dist/v0.8.1/node-v0.8.1.tar.gz" target="_blank">descargar nodejs fuentes</a></li>
+						</ul>
+					</p>
+				</section>
+				<section data-state="blackout">
+					<h2>Nodejs</h2>
+
+					<p>Ryan Dahl starting 2009
+						<img src="img/ryah.jpg"></p>
+					<p><a href="https://twitter.com/ryah" target="_blank">@ryah</a></p>
+						
+				</section>
+
 				<section data-state="blackout">
 					<h2>Non blocking IO <br/>(E/S no bloqueante)</h2>
+					<br/>
+					<br/>
+					<p class="fragment">
+						<ul >
+							<li class="fragment">Minimizar Overhead</li>
+							<li class="fragment">Orientado a Eventos</li>
+							<li class="fragment">Maximizar escalabilidad</li>
+						</ul>
+					</p>
+				</section >
+				<section data-state="blackout">
+						
+					<h2>Construido sobre motor V8</h2>
 					<p>
-						 colocar aca que significa un http://en.wikipedia.org/wiki/Asynchronous_I/O ??
-						 con una imagencita
+						<img src="img/node_turtle.png" width="45%">
+					</p>
+					<p class="fragment">
+						<ul>
+							<li class="fragment">Creado por Google</li>
+							<li class="fragment">Escrito en C++</li>
+							<li class="fragment">Usado por Chrome</li>
+						</ul>
 					</p>
 				</section>
 
 				<section data-state="blackout">
-					<h2>Nodejs</h2>
-					<ul>
-						<li>orientado a eventos</li>
-						<li>no blocking</li>
-						<li>javascript en el server</li>
-						<li>motor v8</li>
-						<li>3 años?</li>
-					</ul>
+					<h2>Casos de éxito</h2>
+					<p>
+						<img src="img/linkedin.png">
+					</p>
+					<p>
+						<img src="img/microsoft.png">
+					</p>
+					<p>
+						<img src="img/yahoo.png">
+					</p>
+					<p>
+						<img src="img/ebay.png">
+					</p>
+					<p>
+						<img src="img/cloud9.png">
+					</p>
+					
 				</section>
-				
+
 				<section data-state="blackout">
-					<h2>Hola Campus!</h2>
-					<br/>
-					<br/>
-					<pre><code contenteditable style="font-size:1.8em;line-height:100%">
+					<section data-state="blackout">
+						<h2>¡Hola Campus!</h2>
+						<br/>
+						<br/>
+						<pre><code contenteditable style="font-size:1.8em;line-height:100%">
 
 	console.log("Hola");
+	console.log("¡Campus Party Co 2012!");
 
-	console.log("Campus Party Co 2012!");
 
+	</code></pre>
+					</section>
+					<section data-state="blackout">
+						<h2>¡Hola Campus! asincrono</h2>
+						<br/>
+						<br/>
+						<pre><code contenteditable style="font-size:1.8em;line-height:110%">
+		
+	var fs = require('fs');
 
-</code></pre>
-				</section>
-				
+	fs.readFile("data.txt", function(err, data) {
+	    console.log(data.toString());
+	});
+	console.log("Campuseros!! ");
+
+	</code></pre>
+					</section>
+				</section>	
+
 				<section data-state="blackout">
-					<h2>Hola Campus! asincrono</h2>
+					<h2>¿Qué ventajas tiene javaScript en el servidor?</h2>
 					<br/>
-					<br/>
-					<pre><code contenteditable style="font-size:1.8em;line-height:100%">
-
-	var util = require("util");??
-
-	util.readFile("", function(file){console.log("Campus Party Co 2012!");});
-
-	console.log("Hola");
-
-
-</code></pre>
+					<p class="fragment">
+						<ul>
+							<li class="fragment">JavaScript como lenguaje de scripting</li>
+							<li class="fragment">Basado en eventos</li>
+							<li class="fragment">El mismo lenguaje en el servidor y en el navegador</li>
+							<li class="fragment">Comunidad en crecimiento</li>
+							<li class="fragment">E/S</li>
+						</ul>
+					</p>
 				</section>
-
-				<section data-state="blackout">
-					<h2>Qué significa javaScript en el servidor?</h2>
-
-					<p>implicaciones importantes, </p>
-					<ul>
-						<li>un solo lenguaje</li>
-						orientado a eventos...
-						modules por defecto de node y lo que se puede hacer
-						tcp
-						socket
-						http
-					</ul>
-				</section data-state="blackout">
 
 				<section data-state="blackout">
 					<h2>Chat simple en node por telnet</h2>
-					<pre><code contenteditable style="font-size:1.8em;line-height:100%">
-
+					<pre><code contenteditable style="font-size:1em;line-height:110%">
 	var net = require("net");
-	net.createServer()....
+	var sockets=[];
+	var idCont=0;
+	var server = net.createServer(function(socket) { 
 
+	  var enviarMensaje= function(id, mensaje){
+	  	for(var i=0; i&lt;sockets.length; i++){
+	  		console.log(sockets[i].id);
+	  		if(sockets[i].id!=id){
+	  			sockets[i].write(mensaje);
+	  		}
+	  	}
+	  }
 
+	  socket.on('end', function() {
+	    console.log('bye');
+	  });
+
+	  socket.on('connect', function(){
+	  	socket.write('hola campusero al nodechat!\r\n');
+	  	socket.id= idCont++;
+	  	sockets.push(socket);
+	  });
+
+	  socket.on('data', function(data){
+	  	enviarMensaje(socket.id, data.toString());
+	  });
+	});
+
+	server.listen(5001, function() { 
+	  console.log('server iniciado');
+	});
 					</code></pre>
 					
 				</section>
 
 				<section data-state="blackout">
 					<h2>Http server con node</h2>
-					<pre><code contenteditable style="font-size:1.8em;line-height:100%">
+					<br/>
+					<br/>
+					<pre><code contenteditable style="font-size:1.2em;line-height:100%">
 
 	var http = require("http");
-	http.createServer()....
 
+	var server = http.createServer(function (req, res) {
+		
+	  res.writeHead(200, {'Content-Type': 'text/plain'});
+	  var agent= req.headers["user-agent"];
+	  res.end("Hola Campusero, estas usando: \n"+agent,"utf8");
+	});
+	console.log("server arriba");
+	server.listen(8001);
 
 					</code></pre>
 					
 				</section>
 				<section data-state="blackout">
-					<h2>NPM (Node Package Manager)</h2>
-					<p> ventajas, uso, ejemplos</p>
+					<h2><img src="img/npm.png"><br/>(Package Manager para Node)</h2>
+					<p>Manejo de dependencias o módulos en node.js
+					</p>
+					<p class="fragment">
+						<ul>
+							<li class="fragment">Publicar</li>
+							<li class="fragment">Descubrir</li>
+							<li class="fragment">Instalar</li>
+							<li class="fragment">Desarrollar</li>
+						</ul>
+					</p>
+					<a href="https://github.com/joyent/node/wiki/modules#wiki-package-management">otros manejadores de dependencias</a>
 				</section>
 
 				<section data-state="blackout">
 					<h2>require.json</h2>
-					<p>manejo facil de dependencias</p>
+					<p >manejo fácil de dependencias
+						<pre><code contenteditable style="font-size:1.3em;line-height:110%">
+{
+    "name": "bomberbot"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "2.5.8"
+    , "connect": "1.8.x"
+    , "ejs": ">= 0.0.1"
+    , "mongodb": ">= 0.9.6-7"
+    , "mongoose": ">= 2.5.10"
+    , "connect-mongodb": "1.1.1"
+    , "connect-timeout": "0.0.1"
+  },
+	"engines": {
+		"node": "0.6.x"
+	}
+}
+</pre>
+						</code>
+					</p>
 				</section>
 
 				<section data-state="blackout">
 					<h2>Paquetes disponibles</h2>
-					<p>paquetes populares</p>
-					<p class="fragment">... to step through ...</p>
-					<ol>
-						<li class="fragment"><code>any type</code></li>
-						<li class="fragment"><em>of view</em></li>
-						<li class="fragment"><strong>fragments</strong></li>
-					</ol>
+					<br/>
+
+					<p class="fragment">
+						<ul>
+							<li class="fragment"><strong>express</strong> framework web</li>
+							<li class="fragment"><strong>socket.io</strong> websockets</li>
+							<li class="fragment"><strong>mongoose</strong> ORM para mongo</li>
+							<li class="fragment"><strong>jade</strong> html template</li>
+							<li class="fragment"><strong>connect</strong> http middleware</li>
+							<li class="fragment"><strong>vows</strong> testing</li>
+							<li class="fragment">
+							<a href="http://geekple.com/nodejs" target="_blank">geekple.com/nodejs</a> NodeJs package browser
+							</li>
+						</ul>
+					</p>
 				</section>
 				
 				<section data-state="blackout">
-					<h1>Gracias</h1>
-					<h3 class="inverted">Giovanny Beltran / agares.co / @_agares_</h3>
+					<h1>Únete!</h1>
+					<p class="fragment">
+						<ul>
+							<li class="fragment">
+								<a href="http://bogotaconf.co/" target="_blank">bogotaconf</a>
+							</li>
+							<li class="fragment">
+								<a href="http://www.bogotajs.com/" target="_blank">bogotajs</a>
+							</li>
+							<li class="fragment">
+								<a href="https://p2pu.org/es/" target="_blank">p2pu</a>
+							</li>
+							<li class="fragment">
+								<a href="http://codetag.me" target="_blank">codetag</a>
+							</li>
+						</ul>
+					</p>
 				</section>
+
+				<section data-state="blackout">
+					<h1>Gracias</h1>
+					
+					<h3 class="inverted">Giovanny Beltran</h3>
+					<p>
+						<img src="img/gio.jpg" width="300" />
+						
+					</p>
+					<a href="http://agares.co" target="_blank">agares.co</a>
+					<br/>
+					<a href="http://twitter.com/_agares_" target="_blank">@_agares_</a>
+					
+				</section>
+				<section data
 			</div>
 
 			<!-- The navigational controls UI -->
